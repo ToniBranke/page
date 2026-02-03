@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Message for You</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <!-- Hidden SVG definition for the heart shape -->
+    <svg width="0" height="0">
+        <defs>
+            <clipPath id="heart-clip" clipPathUnits="objectBoundingBox">
+                <path d="M0.5,1 C0.5,1,0,0.7,0,0.3 A0.25,0.25,0,0,1,0.5,0.3 A0.25,0.25,0,0,1,1,0.3 C1,0.7,0.5,1,0.5,1 Z" />
+            </clipPath>
+        </defs>
+    </svg>
+
+    <!-- Virus Section -->
+    <div id="virus-section">
+        <h1>SYSTEM_ALERT: MALWARE DETECTED</h1>
+        <p>Your system has been compromised by the L.O.V.E.-v24 virus.</p>
+        <p>Immediate action required. Initiating data scan...</p>
+        <div class="progress-bar">
+            <div id="progress"></div>
+        </div>
+        <p id="scan-complete" style="display: none;">Scan complete. Unauthorized sentimental data found. Displaying content now...</p>
+    </div>
+
+    <!-- Valentine's Card Section -->
+    <div id="card-section" style="display: none;">
+        <h1 id="titleQuestion">I have a question for you...</h1>
+        <h1 id="title-yayy">YAYYYYYYYY</h1>
+        <div id="image-container">
+            <!-- Images will be injected here by JavaScript -->
+        </div>
+        <p id="question">Will you be my Valentine?</p>
+        <p id="text"> so its a date<br>
+            you make me the happiest man alive 🥰♥️</p>
+        <div id="buttons">
+            <button id="yes-btn">Yes</button>
+            <button id="no-btn">No</button>
+        </div>
+    </div>
+
+    
+    </body>
+</html>
